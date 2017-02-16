@@ -1,0 +1,98 @@
+.top-bar {
+	display: block;
+	position: relative;
+	background: url(../image/head-girl.png) no-repeat;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center top;
+	min-height: 900px;
+	width: 100%;
+	padding-top: 50px;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    & > * {
+    	position: relative;
+    	z-index: 1;
+    }
+	&:after {
+		position: absolute;
+		display: block;
+		background-color: #000;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+		content: '';
+		height: 100%;
+		width: 100%;
+		opacity: 0.3;
+	}
+	.top-bar-wrap {
+		color: #FFF;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: green;
+		opacity: 0.5;
+		clear: both;
+		.top-bar-logo {
+			float: left;
+			font-size: 28px;
+			font-family: 'EB Garamond', serif;
+			text-transform: uppercase;
+			font-weight: 900;
+			padding: 18px 26px;
+		    display: inline-block;
+		    text-shadow: 2px 2px 5px #000, -2px -1px 1px #000;
+		}
+		.top-bar-navigation, .top-bar-navigation li {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+		}
+		.top-bar-navigation {
+			float: right;
+		}
+		.top-bar-navigation a {
+			text-transform: uppercase;
+		    text-decoration: none;
+		    font-size: 14px;
+		    font-weight: 900;
+		    line-height: 44px;
+		    padding: 14px 10px;
+		    margin: 0 20px;
+		    display: inline-block;
+		    text-shadow: 2px 2px 5px #000, -2px -1px 1px #000;
+		}
+	}
+/*h1 {
+		text-transform: none;
+		font-family: 'Gabriela', serif;
+		/*font-family: 'Bad Script', cursive;
+		font-family: 'Marck Script', cursive;
+		font-family: 'Cormorant Infant', serif;
+		letter-spacing: 0.1em;
+		font-size: 74px;
+		font-weight: 900;
+	}
+	h2 {
+		text-transform: uppercase;
+		margin-top: 50px;	
+		font-size: 92px;
+		letter-spacing: 0.09em;
+		font-family: 'Marmelad', sans-serif;
+		font-weight: 900;
+	}
+	
+*/
+}
